@@ -63,8 +63,14 @@ header {
     background-color: var(--intermediate-color);
     } 
     
+  /* Regras da lista ul de links */
+.menu { 
+    list-style: none; 
     
-.menu { list-style: none; }
+    /* ATENÇÃO!!
+    Usamos display:none para não exibir inicialmente a lista de links */
+    display:none;
+}
 
 /* Regra para formatar os links contidos na lista/menu */
 .menu a {
@@ -78,6 +84,28 @@ header {
 
 
 
+/* Seletor de classes combinadas
+Esta regra somente ira funcionar quando AS DUAS CLASSES estiverem aplicadas JUNTAS no elemento HTML (no caso, na lista de menu/links
+
+Obs: esta combinação será possivel por meio da manipulação programada com JavaScript.*/
+.menu.aberto {
+    
+    /* Aplicamos um fundo à lista evitando a dificuldade de leitura dos links */
+    background-color: var(--light-color);
+    
+    /*O Flex fará a lista de links aparecer */
+    display: flex;
+    
+    /* Com os links em forma de coluna (vertical) */
+    flex-direction: column;
+
+    /* Usamos as propriedades de posicionamento e coordenadas para garantir o encaixe correto
+    (abaixo do título e da palavra Menu) */
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
 
 
 
