@@ -1,3 +1,14 @@
-body{
-    background-color:forestgreen;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@700;800&display=swap');
+
+*{ box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+:root {  
+    /* Variáveis para a paleta de cores do site  */
+    --title-color: #4d4d4d;
+    --text-color:  #333;
+    --dark-color: #000;
+    --light-color: #fff;
+    --intermediate-color: #ececec;
 }
