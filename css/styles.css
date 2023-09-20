@@ -12,3 +12,44 @@ html { font-size: 16px; }
     --light-color: #fff;
     --intermediate-color: #ececec;
 }
+
+body { 
+    color: var(--text-color);
+    font-family: 'Noto Sans', sans-serif ;
+    background-color: var(--light-color);
+ }
+
+ /* CSS Reset em alguns elementos */
+ body, h1, h2, p, figure, .menu {
+    margin: 0;
+    padding: 0;
+ } 
+
+
+img { max-width: 100%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
