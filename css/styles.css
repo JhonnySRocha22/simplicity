@@ -108,8 +108,16 @@ Obs: esta combinação será possivel por meio da manipulação programada com J
 }
 
 
-
-
+article.destaque {
+    background-image:url(../imagens/fundo-destaque.jpg) ;   
+    flex-direction: column;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
 
 
 
