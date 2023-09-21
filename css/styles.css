@@ -127,8 +127,19 @@ article.destaque {
 }
 
 
+.destaque h2 {
+    /* Clamp(
+        tamanho mínimo,
+        tamanho ideal,
+        tamanho máximo
+    ) */
+    
+    font-size: clamp(3rem, 10vw, 7rem);
+}
 
-
+.destaque p {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
 
 
 
