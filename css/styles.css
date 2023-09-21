@@ -109,17 +109,21 @@ Obs: esta combinação será possivel por meio da manipulação programada com J
 
 
 article.destaque {
-    background-image:url(../imagens/fundo-destaque.jpg) ;   
+    background-image:url(../imagens/fundo-destaque.jpg) ;  
+    background-attachment: fixed; 
     flex-direction: column;
     text-align: center;
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
 }
 
+.destaque h2, .destaque p {
+     text-align: center;
+     color: var(--light-color);
 
+}
 
 
 
