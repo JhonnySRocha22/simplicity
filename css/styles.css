@@ -269,6 +269,47 @@ footer {
     margin-bottom: 1rem;
 }
 
+table {
+    width: 80%;
+    margin:auto;
+}
+
+table, th, td {
+    border: solid 1px;
+    
+    /* Remove o espaço entre bordas */
+    border-collapse: collapse;
+}
+
+caption {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+}
+
+th {
+    background-color: var(--dark-color);
+    color:var(--light-color);
+    border-color: var(--dark-color);
+    padding: 0.7rem;
+}
+
+td {padding: 0.5rem;}
+
+td:nth-child(2) {text-align: center;}
+
+th:last-child, td:last-child {
+    text-align: right;
+}
+
+th:first-child { text-align: left; }
+
+tr:nth-child(odd) {
+    background-color: var(--light-color);
+}
+
+
 
 
 
