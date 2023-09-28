@@ -1,47 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@700;800&display=swap');
 
-*{ box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
-html { font-size: 16px; }
+html {
+    font-size: 16px;
+}
 
-:root {  
+:root {
     /* Variáveis para a paleta de cores do site  */
     --title-color: #4d4d4d;
-    --text-color:  #333;
+    --text-color: #333;
     --dark-color: #000;
     --light-color: #fff;
     --intermediate-color: #ececec;
 }
 
-body { 
+body {
     color: var(--text-color);
-    font-family: 'Noto Sans', sans-serif ;
+    font-family: 'Noto Sans', sans-serif;
     background-color: var(--light-color);
- }
+}
 
- /* CSS Reset em alguns elementos */
- body, h1, h2, p, figure, .menu {
+/* CSS Reset em alguns elementos */
+body,
+h1,
+h2,
+p,
+figure,
+.menu {
     margin: 0;
     padding: 0;
- } 
+}
 
 
-img { max-width: 100%; }
+img {
+    max-width: 100%;
+}
 
-h1 { 
+h1 {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 1.5rem;
- }
-h1 a { 
+}
+
+h1 a {
     color: var(--light-color);
     background-color: var(--dark-color);
     padding: 0.3rem 1rem;
     border-radius: 4px;
- }
+}
 
-a { text-decoration: none; }
+a {
+    text-decoration: none;
+}
 
 header .limitador {
     display: flex;
@@ -54,34 +68,36 @@ header .limitador {
 
 
 
-header { 
+header {
 
     position: sticky;
     top: 0;
     background-color: var(--light-color);
- }
+}
 
- 
- /* Formatação da palavra Menu  */
- nav h2 a { 
+
+/* Formatação da palavra Menu  */
+nav h2 a {
     color: var(--dark-color);
     font-size: 1.2rem;
     padding: 1rem;
     display: inline-block;
-    }
-    
- nav h2 a:hover, nav h2 a:focus, 
- .menu a:hover, .menu a:focus {
+}
+
+nav h2 a:hover,
+nav h2 a:focus,
+.menu a:hover,
+.menu a:focus {
     background-color: var(--intermediate-color);
-    } 
-    
-  /* Regras da lista ul de links */
-.menu { 
-    list-style: none; 
-    
+}
+
+/* Regras da lista ul de links */
+.menu {
+    list-style: none;
+
     /* ATENÇÃO!!
     Usamos display:none para não exibir inicialmente a lista de links */
-    display:none;
+    display: none;
 }
 
 /* Regra para formatar os links contidos na lista/menu */
@@ -101,13 +117,13 @@ Esta regra somente ira funcionar quando AS DUAS CLASSES estiverem aplicadas JUNT
 
 Obs: esta combinação será possivel por meio da manipulação programada com JavaScript.*/
 .menu.aberto {
-    
+
     /* Aplicamos um fundo à lista evitando a dificuldade de leitura dos links */
     background-color: var(--light-color);
-    
+
     /*O Flex fará a lista de links aparecer */
     display: flex;
-    
+
     /* Com os links em forma de coluna (vertical) */
     flex-direction: column;
 
@@ -121,8 +137,8 @@ Obs: esta combinação será possivel por meio da manipulação programada com J
 
 
 article.destaque {
-    background-image:url(../imagens/fundo-destaque.jpg) ;  
-    background-attachment: fixed; 
+    background-image: url(../imagens/fundo-destaque.jpg);
+    background-attachment: fixed;
     flex-direction: column;
     text-align: center;
     height: 88vh;
@@ -131,13 +147,14 @@ article.destaque {
     justify-content: center;
 }
 
-.destaque h2, .destaque p {
-     text-align: center;
-     color: var(--light-color);
-     
-     animation-name: textoDestaque;
-     animation-duration: 3s;
-     animation-timing-function:ease-in-out;
+.destaque h2,
+.destaque p {
+    text-align: center;
+    color: var(--light-color);
+
+    animation-name: textoDestaque;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
 }
 
 
@@ -147,9 +164,9 @@ article.destaque {
         tamanho ideal,
         tamanho máximo
     ) */
-    
+
     font-size: clamp(3rem, 10vw, 7rem);
-    
+
 }
 
 .destaque p {
@@ -159,13 +176,13 @@ article.destaque {
 
 /* Regra de animação */
 @keyframes textoDestaque {
-    from { 
-        opacity: 0; 
+    from {
+        opacity: 0;
         transform: translateY(-500px);
     }
-   
-    to { 
-        opacity: 1; 
+
+    to {
+        opacity: 1;
     }
 }
 
@@ -176,7 +193,9 @@ article h2 {
     color: var(--title-color);
 }
 
-.front-end, .historia, .localizacao {
+.front-end,
+.historia,
+.localizacao {
     text-align: center;
 }
 
@@ -196,20 +215,20 @@ abbr {
 }
 
 .historia {
-    background-image:url(../imagens/fundo-madeira.jpg);  
-    background-attachment: fixed;   
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
 }
 
-.historia h2 { 
+.historia h2 {
     color: var(--light-color);
-    text-shadow:0.1em 0.1em 0.2em black;
+    text-shadow: 0.1em 0.1em 0.2em black;
 
 }
 
-.historia iframe{
+.historia iframe {
     width: 100%;
     max-width: 700px;
-   margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .localizacao iframe {
@@ -220,11 +239,11 @@ abbr {
 .limitador {
     width: 95vw;
     margin: auto;
-   
+
 }
 
 footer {
-    background-color: var(--dark-color); 
+    background-color: var(--dark-color);
     color: var(--light-color);
     height: 30vh;
     display: flex;
@@ -238,8 +257,21 @@ footer {
 
 
 
+@media screen and (min-width: 570px) {
+     nav h2  {display: none;}
 
+    .menu {display: flex;}
 
+    .menu li {width: 100%;}
 
+    .front-end img {height: 150px;}
 
+    nav{width: 70%;}
+}
 
+@media screen and (min-width:900px) {
+
+    html {font-size: 18px;}
+
+    .limitador {max-width: 1000px;}
+}
