@@ -67,11 +67,12 @@ header .limitador {
 
 
 
-
+/* Z-index: garante que o conteudo fique atras do cabeçalho quando rolar a página */
 header {
 
     position: sticky;
     top: 0;
+    z-index: 100;
     background-color: var(--light-color);
 }
 
@@ -325,11 +326,14 @@ td:last-child::before {
 .galeria img {
     border-radius: 100%;
     transform: scale(0.9);
+    transition: 300ms;
+    filter:blur(2px) ;
 }
 
 .galeria a:hover img, .galeria a:focus img {
     transform: scale(1);
     border-radius: 10%;
+    filter: none ;
 }
 
 
