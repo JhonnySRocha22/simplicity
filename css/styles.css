@@ -310,19 +310,14 @@ tr:nth-child(odd) {
 }
 
 
+td:last-child {position: relative;}
+td:last-child::before {
+    content: "R$ ";
+    position: absolute;
+    left: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.conteudo h2::before {content: "👽 ";}
 
 @media screen and (min-width: 570px) {
      nav h2  {display: none;}
