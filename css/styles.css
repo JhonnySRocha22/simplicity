@@ -318,7 +318,9 @@ td:last-child::before {
     left: 10px;
 }
 
-.conteudo h2::before {content: "👽 ";}
+/* .conteudo h2::before {content: "👽 ";} */
+.servicos h2::before {content: "👽 ";}
+.produtos h2::before {content: "🛒 ";}
 
 
 .galeria {text-align: center;}
