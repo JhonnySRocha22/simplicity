@@ -319,6 +319,25 @@ td:last-child::before {
 
 .conteudo h2::before {content: "👽 ";}
 
+
+.galeria {text-align: center;}
+
+.galeria img {
+    border-radius: 100%;
+    transform: scale(0.9);
+}
+
+.galeria a:hover img, .galeria a:focus img {
+    transform: scale(1);
+    border-radius: 10%;
+}
+
+
+
+
+
+
+
 @media screen and (min-width: 570px) {
      nav h2  {display: none;}
 
