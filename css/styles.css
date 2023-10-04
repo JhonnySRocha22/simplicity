@@ -340,6 +340,60 @@ td:last-child::before {
 
 
 
+/* Regras para o formulário */
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, select, textarea {
+    border: none;
+    padding: 4px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+textarea {height: auto;}
+
+form div {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 30%;
+}
+
+
+/* Pseudo-classe :not() 
+Permite criar exceções para uma regra. 
+Neste exemplo, estamos aplicando 80% de largura para tudo(*) dentro do "form div" EXCETO o "label".*/
+form div *:not(label) { width: 80%; }
+
+
+button {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: none;
+    font-weight: bold;
+    padding:  1rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover, button:focus {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    box-shadow: var(--dark-color) 0 0 2px;
+}
+
+
+
 
 
 
