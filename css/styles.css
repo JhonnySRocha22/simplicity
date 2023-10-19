@@ -392,8 +392,12 @@ button:hover, button:focus {
     box-shadow: var(--dark-color) 0 0 2px;
 }
 
+#cep {width: 60%;}
 
-
+#buscar{
+    width: 39%;
+    padding: 12px;
+}
 
 
 
