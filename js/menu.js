@@ -13,3 +13,10 @@ const menu = document.querySelector(".menu");
 const textoBotao = botaoMenu.querySelector("a");
 
 
+botaoMenu.addEventListener("click", function(event){
+    
+    /* Anular/prevenir o comportamento padrão do link */
+    event.preventDefault();
+    menu.classList.toggle("aberto");
+});
+
