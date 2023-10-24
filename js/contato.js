@@ -9,6 +9,17 @@ const campoEstado = formulario.querySelector("#estado");
 const botaoBuscar = formulario.querySelector("#buscar");
 const mensagem = formulario.querySelector("#status");
 
+
+//Seleção do campo telefone
+const campoTelefone = formulario.querySelector("#telefone") 
+
+//Seleção do campo telefone usando jQuery
+//const campoTelefone = ${"#telefone"};
+ 
+
+//Ativando a máscara para telefone e cep
+$(campoTelefone).mask("(00) 0000-0000");
+$(campoCep).mask("00000-000");
 //Detectando o evento de CLICK no botão buscar
 botaoBuscar.addEventListener("click", async function(event){
     event.preventDefault();
@@ -18,7 +29,7 @@ botaoBuscar.addEventListener("click", async function(event){
 
 /* Verificando se o cep NÃO tem 8 dígitos
 O operador !== significa "diferente de" */
-if (campoCep.value.length !== 8) {
+if (campoCep.value.length !== 9) {
     //Alerte o usuário sobre o erro de digitação
     mensagem.textContent = "digite um CEP válido!";
     mensagem.style.color = "purple";
